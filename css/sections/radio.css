@@ -1,7 +1,8 @@
 .initial-navbar {
   background-color: #1c2d41;
 }
-
-div.container.radio-content {
-  padding-top: 80px;
+.radio-content {
+  width: 100%;
+  padding: 1rem;
+  padding-top: 4rem;
 }

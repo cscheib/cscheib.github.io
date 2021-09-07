@@ -1,6 +1,6 @@
 <!doctype html><html>
 <head>
-<title>Ham Radio</title>
+<title>Radio</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="ie=edge">
@@ -11,122 +11,74 @@
 <link rel=stylesheet href=/css/flag-icon.min.css>
 <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel=stylesheet>
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css>
-<meta property="og:title" content="Ham Radio">
-<meta property="og:description" content="Amateur Radio">
-<meta property="og:type" content="article">
-<meta property="og:url" content="/radio/"><meta property="article:section" content>
-<meta name=description content="Amateur Radio">
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css>
-<link rel=stylesheet href=/css/layouts/single.css>
-<link rel=stylesheet href=/css/navigators/sidebar.css>
-<link rel=stylesheet href=/css/style.css>
+<meta property="og:title" content="Radio">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="/radio/">
+<link rel=stylesheet href=/css/sections/radio.css>
 </head>
 <body data-spy=scroll data-target=#TableOfContents data-offset=80>
 <div class="container-fluid bg-dimmed wrapper">
-<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+<nav class="navbar navbar-expand-xl top-navbar initial-navbar" id=top-navbar>
 <div class=container>
-<button class="navbar-toggler navbar-light" id=sidebar-toggler type=button onclick=toggleSidebar()>
-<span class=navbar-toggler-icon></span>
-</button>
 <a class=navbar-brand href=/>
 scheib.io - Chris Scheib</a>
-<button class="navbar-toggler navbar-light" id=toc-toggler type=button onclick=toggleTOC()>
+<button class="navbar-toggler navbar-dark" id=navbar-toggler type=button data-toggle=collapse data-target=#top-nav-items aria-label=menu>
 <span class=navbar-toggler-icon></span>
 </button>
-<div class="collapse navbar-collapse lang-selector" id=top-nav-items>
+<div class="collapse navbar-collapse" id=top-nav-items>
 <ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=#home>Home</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=#about>About</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=#skills>Skills</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=#achievements>Achievements</a>
+</li>
+<div class=dropdown-divider id=top-navbar-divider></div>
+<li class=nav-item>
+<a class=nav-link id=blog-link href=/posts>Posts</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/radio>Radio</a>
+</li>
 </ul>
 </div>
 </div>
 </nav>
-<section class=sidebar-section id=sidebar-section>
-<div class=sidebar-holder>
-<div class=sidebar id=sidebar>
-<form class=mx-auto method=get action=/search>
-<input type=text name=keyword placeholder=Search data-search id=search-box>
-</form>
-<div class=sidebar-tree>
-<ul class=tree id=tree>
-<li id=list-heading><a href=/posts data-filter=all>Posts</a></li>
-<div class=subtree>
-</div>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section class=content-section id=content-section>
-<div class=content>
-<div class="container p-0 read-area">
-<div class="hero-area col-sm-12" id=hero-area style=background-image:url(/images/default-hero.jpg)>
-</div>
-<div class=page-content>
-<div class="author-profile ml-auto align-self-lg-center">
-<img class=rounded-circle src=/images/author/john_hu7f9991f5b5d471ecdfc6cff3db1a9fe6_6397_120x120_fit_box_3.png alt="Author Image">
-<h5 class=author-name>Chris Scheib</h5>
-<p>January 1, 0001</p>
-</div>
-<div class=title>
-<h1>Ham Radio</h1>
-</div>
-<div class=post-content id=post-content>
+<div class="container radio-content">
 <h1 id=ke8opc>KE8OPC</h1>
-<p><a href=https://www.qrz.com/db/KE8OPC>QRZ</a>
+<p><a href=https://www.qrz.com/db/KE8OPC>QRZ</a><br>
 <a href="https://pskreporter.info/pskmap?callsign=ke8opc">PSKReporter</a></p>
 <p>I obtained my Technician class license on 2020-06-14<br>
 I upgraded my privileges to General on 2021-05-25<br>
 I&rsquo;m currently studying for my Amateur Extra</p>
-<h4 id=vhfuhf-ht>VHF/UHF HT</h4>
-<p>Baofeng BF-F8HP<br>
-Nagoya NA-771</p>
-<h4 id=dmr-vhfuhf-ht>DMR VHF/UHF HT</h4>
-<p>Anytone AT-D878UV Plus Bluetooth W/ GPS<br>
-Nagoya NA-771</p>
-<h4 id=digital-mode-hotspot>Digital Mode Hotspot</h4>
-<p>AURSINC MMDVM Hotspot</p>
-<h4 id=hf-base-station>HF Base Station</h4>
-<p>Yaesu FTDX-10<br>
-MFJ-1982HP, END FED, 1/2 WAVE, 80-10M, 800W</p>
-</div>
-<div class=btn-improve-page>
-<a href=https://github.com/cscheib/scheib_io//edit//content/radio.md title="Improve this page" target=_blank rel=noopener>
-<i class="fas fa-code-branch"></i>
-Improve this page
-</a>
-</div>
-<hr>
-<div class="row next-prev-navigator">
-</div>
-<hr>
-</div>
-</div>
-</div>
-<a id=scroll-to-top class=btn><i class="fas fa-chevron-circle-up"></i></a>
-</section>
-<section class=toc-section id=toc-section>
-<div class=toc-holder>
-<h5 class="text-center pl-3">Table of Contents</h5>
-<hr>
-<div class=toc>
-<nav id=TableOfContents>
+<h5 id=vhfuhf-ht>VHF/UHF HT</h5>
 <ul>
-<li>
+<li>Baofeng BF-F8HP</li>
+<li>Nagoya NA-771</li>
+</ul>
+<h5 id=dmr-vhfuhf-ht>DMR VHF/UHF HT</h5>
 <ul>
-<li>
+<li>Anytone AT-D878UV Plus Bluetooth W/ GPS</li>
+<li>Nagoya NA-771</li>
+</ul>
+<h5 id=digital-mode-hotspot>Digital Mode Hotspot</h5>
 <ul>
-<li><a href=#vhfuhf-ht>VHF/UHF HT</a></li>
-<li><a href=#dmr-vhfuhf-ht>DMR VHF/UHF HT</a></li>
-<li><a href=#digital-mode-hotspot>Digital Mode Hotspot</a></li>
-<li><a href=#hf-base-station>HF Base Station</a></li>
+<li>AURSINC MMDVM Hotspot</li>
 </ul>
-</li>
+<h5 id=hf-base-station>HF Base Station</h5>
+<ul>
+<li>Yaesu FTDX-10</li>
+<li>MFJ-1982HP, END FED, 1/2 WAVE, 80-10M, 800W</li>
 </ul>
-</li>
-</ul>
-</nav>
+<p><a href=https://github.com/hugo-toha/toha/issues/83>https://github.com/hugo-toha/toha/issues/83</a></p>
 </div>
-</div>
-</section>
 </div>
 <footer class="container-fluid text-center align-content-center footer pb-2">
 <div class="container pt-5">
@@ -177,8 +129,5 @@ Toha
 <script type=text/javascript src=/js/navbar.js></script>
 <script type=text/javascript src=/js/plyr.js></script>
 <script type=text/javascript src=/js/main.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js></script>
-<script src=/js/single.js></script>
-<script>hljs.initHighlightingOnLoad()</script>
 </body>
 </html>
